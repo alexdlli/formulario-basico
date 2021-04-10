@@ -1,0 +1,25 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 40px auto;
+    width: 500px;
+    text-align: center;
+    background-color: rgb(17, 73, 83);
+    color: white;
+}
+
+form{
+    background-color: tomato;
+    text-align: center;
+    border: 1px solid ;
+    border-color:2px ;
+}
+
+.form-group{
+    margin: 10px;
+    padding: 10px;
+}
+
+label{
+    display: block;
+    position: relative;
+}

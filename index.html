@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forulario de pesquisa</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" placeholder="Insira o seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" name="nome" placeholder="Insira o seu E-mail" required>
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade(Opcional)</label>
+            <input type="number" name="idade" min="1" placeholder="Informe a sua idade">
+        </div>
+        <div class="form-group">
+            <label for="idioma" required>Selecione o seu melhor idioma(Não vale o nativo)</label>
+            <select name="idioma">
+                <option disabled selected value>Selecione um idioma</option>
+                <option value="portugues">Portugues</option>
+                <option value="ingles">Ingles</option>
+                <option value="espanhol">Espanhol</option>
+                <option value="japones">Japones</option>
+                <option value="frances">Françes</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Qual e o seu nivel com esse idioma?</p>
+            <label>
+                <input value="basico" type="radio" name="nivel" class="radio">Basico
+            </label>
+            <label>
+                <input value="medio" type="radio" name="nivel" class="radio">Medio
+            </label>
+            <label>
+                <input value="avancado" type="radio" name="nivel" class="radio">Avançado
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="idioma">Qual e sua linguagem de programação favorita?</label>
+            <select name="idioma">
+                <option disabled selected value>Selecione uma linguagem de programação</option>
+                <option value="javaScript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Em que area gostaria de trabalhar?</p>
+            <label>
+                <input value="fullstack" type="checkbox" name="area" class="radio">Full Stack
+            </label>
+            <label>
+                <input value="frontend" type="checkbox" name="area" class="radio">Front-End
+            </label>
+            <label>
+                <input value="backend" type="checkbox" name="area" class="radio">Back-End
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Conte um pouco sobre você</p>
+            <textarea name="sobre" id="" placeholder="Escreva sobre voce..." cols="30" rows="10" style="margin-bottom: 0px; margin-top: 0px; resize: vertical;"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar Formulario</button>
+        </div>
+    </form>
+</body>
+</html>
